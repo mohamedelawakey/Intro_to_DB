@@ -10,7 +10,7 @@ def create_database():
         )
         
         mycursor = mydb.cursor()
-        mycursor.execute('create database if not exists alx_book_store')
+        mycursor.execute('CREATE DATABASE IF NOT EXISTS alx_book_store')
         mydb.commit()
         
         print("Database 'alx_book_store' created successfully!")
